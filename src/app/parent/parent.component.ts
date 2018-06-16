@@ -10,7 +10,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class ParentComponent {
 child = 'text passed to child';
 // tslint:disable-next-line:member-ordering
-onNotify(message: string): void {
+onNotify(message: string) {
   alert(message);
 }
 

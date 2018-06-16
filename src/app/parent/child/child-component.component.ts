@@ -4,9 +4,9 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   // tslint:disable-next-line:component-selector
   selector: 'child-component',
   template: `
-    <h1>
+    <h2>
         {{childTitle}}
-    </h1>
+    </h2>
   <button type="button" (click)="notifyParent()" > click me!</button>
 
   `,
@@ -30,8 +30,5 @@ export class ChildComponentComponent implements OnInit {
     console.log('event listener works');
   }
 
-  onNotified() {
-
-  }
 
 }
